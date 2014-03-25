@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Succinctly.Model.Project">
+    <Position X="4.75" Y="7" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EAMAAAAIECCgAAAEAAAAAASABAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Project.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Detail" />
+      <Property Name="Customer" />
+      <Property Name="ProjectManager" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="ProjectResources" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Succinctly.Model.Customer">
+    <Position X="3.75" Y="11" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAECAAAAAQAAAAAABAAAAAAAAAAAQA=</HashCode>
+      <FileName>Customer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Contact" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Projects" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Succinctly.Model.Resource">
+    <Position X="6.25" Y="10.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAQAAgAAECAAAAAQAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Resource.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Contact" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Technologies" />
+      <Property Name="ProjectResources" />
+      <Property Name="Projects" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Succinctly.Model.ProjectResource">
+    <Position X="7.75" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAEAAACAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProjectResource.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Project" />
+      <Property Name="Resource" />
+      <Property Name="Role" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Succinctly.Model.Technology">
+    <Position X="9.25" Y="10.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAIAAAAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Technology.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Resources" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Succinctly.Model.ProjectDetail">
+    <Position X="1.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAIAAAAAAAAAAAAAAAACAAABAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>ProjectDetail.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Project" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Succinctly.Model.Tool">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAQAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Tool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Succinctly.Model.DevelopmentTool">
+    <Position X="4" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DevelopmentTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Succinctly.Model.TestingTool">
+    <Position X="6.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>TestingTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Succinctly.Model.ManagementTool">
+    <Position X="8.5" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>ManagementTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Succinctly.Model.ContactInformation">
+    <Position X="5" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>ContactInformation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Succinctly.Model.Role">
+    <Position X="10.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Role.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
